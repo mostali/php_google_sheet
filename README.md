@@ -1,5 +1,7 @@
 # php_google_sheet
-Simpe api to get data from Google Sheet's
+Simple api class UGS to get data from Google Sheet's
+
+##Install or download 
 
 Install or download pacakge from https://github.com/googleapis/google-api-php-client/releases
 
