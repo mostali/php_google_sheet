@@ -112,3 +112,47 @@ class UGS {
     }
 
 }
+
+
+class GoogleSheetCache {
+
+    public $sheetId;
+    //
+    public $tables;
+    public $tablesData;
+
+    public function getSheetId() {
+        return $this->sheetId;
+    }
+
+    public function __construct($sheetId, $tables = null) {
+        $this->sheetId = $sheetId;
+        $this->tables = $tables;
+    }
+
+    public function firstSheetRows() {
+        foreach ($this->getTableNames() as $table_name)
+            return $this->getTableDataRows($table_name);
+    }
+
+    public function getTableNames() {
+        return array_keys($this->getTables());
+    }
+
+    public function getTables($tableNameStartWith = '') {
+        if ($this->tables == null)
+            $this->tables = UGS::getTables($this->sheetId, static function($name) use ($tableNameStartWith) {
+                        return empty($tableNameStartWith) ? true : US::startsWith($name, $tableNameStartWith);
+                    });
+        return $this->tables;
+    }
+
+    public function getTableDataRows($table_name) {
+        if (isset($this->tablesData[$table_name]))
+            return $this->tablesData[$table_name];
+        $table_rows = UGS::getTableData($this->sheetId, $table_name);
+        $this->tablesData[$table_name] = $table_rows;
+        return $table_rows;
+    }
+
+}
