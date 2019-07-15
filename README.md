@@ -13,7 +13,7 @@ Install or download pacakge from https://github.com/googleapis/google-api-php-cl
 1. Go to https://console.developers.google.com/apis/credentials
 2. Create service account key && rename donwloaded key to google-api-key-example.json (or ..)
 
-Key google-api-key-example.json get from
+## Usage
 ```
 include_once $_SERVER['DOCUMENT_ROOT'] . '/src/UGS.php';
 
