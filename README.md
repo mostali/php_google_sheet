@@ -11,7 +11,7 @@ Install or download pacakge from https://github.com/googleapis/google-api-php-cl
 
 ## How to get key.json?
 1. Go to https://console.developers.google.com/apis/credentials
-2. Create service account key && rename donwloaded key to google-api-key-example.json or ...
+2. Create service account key && rename donwloaded key to google-api-key-example.json (or ..)
 
 Key google-api-key-example.json get from
 ```
