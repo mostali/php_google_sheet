@@ -9,7 +9,7 @@ Install or download package from https://github.com/googleapis/google-api-php-cl
 2. Put in folder src instance Google.php file
 3. Put in folder, by default - src, file UGS.php & google-api-key-example.json
 
-## How to get key.json?
+## How to get key *.json?
 1. Go to https://console.developers.google.com/apis/credentials
 2. Create service account key && rename donwloaded key to google-api-key-example.json (or ..)
 
