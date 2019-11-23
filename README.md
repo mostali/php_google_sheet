@@ -3,7 +3,7 @@ Simple api class UGS to get data from Google Sheet's
 
 ## How to use?
 
-Install or download package from https://github.com/googleapis/google-api-php-client/releases
+Install or download package (v2.2.3) from https://github.com/googleapis/google-api-php-client/releases
 
 1. Copy source code (folder src) from downloaded package to own site folder
 2. Put in folder src instance Google.php file
